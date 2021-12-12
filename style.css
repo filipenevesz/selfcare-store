@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.borda {
+    border: 1px solid red;
+}
+
+/*Menu
+---------*/
+
+#logo {
+    font-size: 1.4em;
+}
+
+#banner {
+    background-color: #adde87;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+.nav-link {
+    color: #212529;
+}
+
+.nav-link:hover {
+    color: #52b349;
+}
+
+/*Conteudo
+------------*/
+
+#conteudo {
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+span {
+    color: #212529;
+}
+
+.produto {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartao-link {
+    text-decoration: none;
+    color: #212529;
+    transition: color 0.15s ease-in-out;
+}
+
+
+.cartao-link:hover{
+  color: #418b3a;
+}
+
+.produto-img {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.produto-img img:hover {
+    opacity: 0.7;
+    transition: opacity 0.15s ease-out;
+    
+}
+
+
+.produto-text {
+    width: 300px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.cartao img {
+    width: 302px;
+}
+
+.valor {
+    color: green;
+    font-weight: bold;
+}
+
+.valor:hover {
+    text-decoration: none;
+}
+
+/*conteudo-text
+------------*/
+
+#conteudo-text {
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+#conteudo-text ul {
+    list-style-type: none;
+    float: left;
+    padding-right: 100px;
+}
+
+#conteudo-text .nav-link {
+    padding: 3px 23px;
+}
+
+.btn-custom {
+    background: #5ca720;
+}
+
+.btn-custom:hover {
+    background: #3e7214;
+}
+
+/*rodape
+--------------*/
+
+.icones {
+    float: left;
+}
+
+.fa-custom {
+    font-size: 2em;
+   
+}
+
+.rodape-link {
+    color: #5ca720;
+    transition: color 0.15s ease-in-out;
+}
+
+.rodape-link:hover{
+    color: #418b3a;
+  }
+
+/*----------------*/
+
+/*darkmode*/
+
+.dark-mode {
+    background-color: #181818;
+}
+
+.nav-link-dark {
+    display: block;
+    padding: 0.5rem 0.5rem;
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  }
+
+  .nav-link-dark:hover {
+    color: #418b3a;
+  }
+
+  .cartao-link-dark {
+    text-decoration: none;
+    color: #f8f9fa;
+    transition: color 0.15s ease-in-out;
+}
+
+
+.cartao-link-dark:hover{
+  color: #418b3a;
+}
+
+
+
+  @media (max-width: 575.98px) {
+	
+    .cartao img {
+        width: 200px;
+    }
+    .produto-text {
+        width: 100px;
+        padding-top: 15px;
+        font-weight: bold;
+    }
+
+    #conteudo-text .py-3 {
+        padding-top: 0rem;
+    }
+
+    h4 {
+        font-size: 1.3em;
+    }
+
+    .cont {
+        display: none;
+    }
+
+    section#conteudo-text.py-3 {
+        padding: 10px;
+    }
+
+    #rodape .ms-5 { 
+        margin-left: 0rem;
+      }
+    
+  }
+  @media (min-width: 576px) {
+  
+    .cartao img {
+        width: 250px;
+    }
+    .produto-text {
+        width: 200px;
+        padding-top: 15px;
+        font-weight: bold;
+    }
+
+    #conteudo-text .py-3 {
+        padding-top: 0rem;
+    }
+
+    h4 {
+        font-size: 1.4em;
+    }
+
+    .cont {
+        display: none;
+    }
+
+    #rodape .ms-5 { 
+        margin-left: 0rem;
+      }
+
+  }
+  @media (min-width: 768px) {
+    
+    .cartao img {
+        width: 220px;
+    }
+
+    .produto-text {
+        width: 210px;
+        padding-top: 15px;
+        font-weight: bold;
+    }
+
+    #conteudo-text .py-3 {
+        padding-top: 0rem;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+
+    .cont {
+        display: none;
+    }
+
+    #rodape .ms-5 { 
+        margin-left: 0rem;
+      }
+
+  }
+  @media (min-width: 992px) {
+    
+    .cartao img {
+        width: 270px;
+    }
+
+    .cont {
+        display: block;
+    }
+
+    .py-3 {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem;
+    }
+
+    #rodape .ms-5 { 
+        margin-left: 0rem;
+      }
+
+     
+   
+  }
+  @media (min-width: 1200px) {
+    
+    .cartao img {
+        width: 302px;
+    }
+
+    .py-3 {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem;
+    }
+
+    #rodape .ms-5 { 
+        margin-left: 1rem;
+      }
+
+      .cont-text {
+          padding-right: 3rem;
+      }
+
+  }
+  @media (min-width: 1400px) {
+    
+    .cartao img {
+        width: 302px;
+    }
+
+    .py-3 {
+        padding-top: 1rem !important;
+        padding-bottom: 1rem;
+    }
+
+   #rodape .ms-5 { 
+    margin-left: 3rem;
+  }
+
+  .cont-text {
+    padding-right: 0rem;
+}
+
+}
+
+  
